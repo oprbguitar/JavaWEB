@@ -24,9 +24,9 @@ public class Conexion {
              JOptionPane.showMessageDialog(null, "Error en la conexion");  
         }
     }
-    public ResultSet consulta(){
+    public ResultSet consulta(String codigo){
             try {
-           res=sen.executeQuery("select*from employees");
+           res=sen.executeQuery(codigo);
            meta=res.getMetaData();
            campos=meta.getColumnCount(); 
            } catch (SQLException e3) {

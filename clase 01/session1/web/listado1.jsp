@@ -10,7 +10,7 @@
         <%
          Conexion cnx= new Conexion();
          cnx.conectarBD();
-         ResultSet datos =cnx.consulta();
+         ResultSet datos =cnx.consulta("select*from employees");
          out.println("<table border=1>");
          while(datos.next()){
              out.println("<tr>");
