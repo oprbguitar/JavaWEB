@@ -19,16 +19,20 @@ public class Ejemplo3 extends HttpServlet {
         sal =res.getWriter();
         tmail=req.getParameter("txtEmail");
         tclave=req.getParameter("txtPassword");
-      
+        cabecera(sal);
+        if(valida()==true)
+            correcto(sal);
+        else
+            incorrecto(sal);
+        pie(sal);
         }
 
-    @Override
+   
     protected void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         processRequest(req, res);
     }
 
-    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         processRequest(req, res);

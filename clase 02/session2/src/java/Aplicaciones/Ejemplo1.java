@@ -15,7 +15,7 @@ public class Ejemplo1 extends HttpServlet {
         salida.println("");
         salida.println("<head><title>Aplicacion 1 - Servlets </title></head>");
         salida.println("<body>");
-        salida.println("<h1>Pirmer ejemplo - servlets </h1>");
+        salida.println("<h1>Primer ejemplo - servlets </h1>");
         salida.println("......................................");
         salida.println("</body></html>");
       }
