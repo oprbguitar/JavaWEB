@@ -25,7 +25,7 @@ public class Ejemplo4 extends HttpServlet {
         salida.println("</tr>");
         salida.println("<tr>");
         salida.println("<td>Password</td>");
-        salida.println("<td><input type='text' name='txtPassword' value=''</td>");
+        salida.println("<td><input type='password' name='txtPassword' value=''</td>");
         salida.println("</tr>");
         salida.println("<tr>");
         salida.println("<td><input type='submit' value='Aceptar'</td>");
