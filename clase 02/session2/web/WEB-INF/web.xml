@@ -16,6 +16,10 @@
         <servlet-name>Ejemplo4</servlet-name>
         <servlet-class>Aplicaciones.Ejemplo4</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Ejemplo5</servlet-name>
+        <servlet-class>Aplicaciones.Ejemplo5</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Ejemplo1</servlet-name>
         <url-pattern>/Ejemplo1</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>Ejemplo4</servlet-name>
         <url-pattern>/Ejemplo4</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Ejemplo5</servlet-name>
+        <url-pattern>/Ejemplo5</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
