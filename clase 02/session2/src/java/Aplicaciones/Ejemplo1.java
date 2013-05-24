@@ -8,23 +8,26 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Ejemplo1 extends HttpServlet {
 
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    protected void processRequest(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
+        res.setContentType("text/html"); // para devolver resultados en formato html
+        PrintWriter salida = res.getWriter();
+        salida.println("");
+        salida.println("<head><title>Aplicacion 1 - Servlets </title></head>");
+        salida.println("<body>");
+        salida.println("<h1>Pirmer ejemplo - servlets </h1>");
+        salida.println("......................................");
+        salida.println("</body></html>");
       }
     
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void doGet(HttpServletRequest request, HttpServletResponse res)
             throws ServletException, IOException {
-        processRequest(request, response);
+        processRequest(request, res);
     }
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest request, HttpServletResponse res)
             throws ServletException, IOException {
-        processRequest(request, response);
+        processRequest(request, res);
     }
 
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
 }
